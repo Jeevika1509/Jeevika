@@ -1,0 +1,60 @@
+1.package com.xworkz;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class MaxMin {
+
+	public static void main(String[] args) {
+
+		List<Integer> collection=new ArrayList<Integer>();
+		collection.add(45);
+		collection.add(333);
+		collection.add(76);
+		collection.add(29);
+		collection.add(900);
+		collection.add(23);
+		collection.add(474);
+		collection.add(654);
+		collection.add(29);
+		collection.add(454);
+		
+		System.out.println("maximum element in the list:"+Collections.max(collection));
+	
+		System.out.println("minimum element in list:"+Collections.min(collection));
+	}
+
+}
+
+3.generalized class:converting child class type to parent class type is generalized class.
+  specialized class:converting parent class type to child class type is specialised class.
+
+4.a)We have to make the class final if we don't want the class to be inherited.
+  b)String,Integer are examples for final classes 
+
+5.SortedSet,TreeSet
+6.arraylist:->it uses array to store elements.
+            ->read operation is fast in arraylist as we can access elements by index.
+	    ->It is slow in arraylist to modify the data as it uses array so if any element is removed all the elements has to be shifted.
+	    ->In arraylist elements are stored in continous memory locations.
+	    ->Arraylist implements list.
+  linkedlist:->It uses doubly linked list to store elements.
+             ->read operation is slow in linkedlist as elements are not stored in continuos memory location.
+	     ->Modifying data is fast in linkedlist as it uses doubly linked list to store elements and there is no shifting required.
+	     ->Linked list implements list and queue.
+	     ->In linked list elements are not stored in continous memory locations.
+
+7.ListIterator->We can access the elements in forward and backward direction.
+	      	Methods in listIterator-hasPrevious(),next(),Previous()
+
+  Iterator->We can access the elements in forward direction.
+	    Methods in iterator-hasnext(),next()
+
+9.memory leakage-In memory leakage garbage collector cannot remove unused objects in the memory.
+
+10.static polymorphism-It is based on method overloading.Static polymorphism in java decided which method to execute during compile time.
+		       In static polymorphism,method overloading can be done by varying number of parameters or by giving different datatype.
+   Dynamic polymorphism-It is based on method overriding.Dynamic polymorphism means sub class providing implementation for super class method.
+
+11.Security can be provide through encapsulation by making properties private in the class.
