@@ -1,0 +1,46 @@
+1.Collection is a interface used to store group of elements.Collection Interface extends Iterable interface.List,Set,Sorted Set,Queue are Interface which extends 
+ collection interface.Array List,Linked List implements List Interface.Hashset,Linked Hashset implements Set.Treeset implements Sorted Set Interface.
+ In List,it alllows duplicate elements.In set it doesn't allow duplicates.Set is used to store unordered elements.List contains ordered elements.
+ Insertion order is maintained in list.In Set,there is no insertion order of elements.List is index based.Set is not index based.
+
+2.In map interface,sorted map extends Map Interface.Hashmap implements Map interface.TreeMap implements sorted map.Linked hashmap extends hashmap.
+
+3.Hash set is implemented using HashTable.The tree set is implemented using a tree structure. Hash set use equals method to compare two objects.
+  Tree set use compare method for comparing two objects.HashSet does not maintain any order.TreeSet maintains an object in sorted order.HashSet allows a null object.
+  The tree set does not allow the null object. It throws the null pointer exception.
+
+4.HashMap implements the map interface. It stores the data in the pair of Key and Value.In equals method,It checks the equality of two objects.
+  It compares the Key, whether they are equal or not.In hashcode,It returns the memory reference of the object in integer. 
+  
+5. The Fail Fast iterators immediately throw ConcurrentModificationException in case of structural modification of the collection. 
+   Structural modification means adding, removing, updating the value of an element in a data collection while another thread is iterating over that collection. 
+   The Fail Safe iterators are just opposite to Fail Fast iterators, A fail-safe iterator does not throw any exceptions unless it can handle if the collection
+   is modified during the iteration process. This can be done because they operate on the copy of the collection object instead of the original object. The structural 
+   changes performed on the original collection ignored by them and affect the copied collection, not the original collection. So, the original collection will be 
+   kept structurally unchanged. 
+
+7.Spliterators can be used for traversing the elements of a source one by one. These sources could be an array, a Collection. The main functionalities of Spliterator 
+  are:-Splitting the source data,Processing the source data.
+
+8.Joining Strings With the Stream,Splitting Strings With Stream,String Array to Map With Stream.
+
+9.spring-core is the core of the framework that contain features such as Inversion of Control and dependency injection.
+
+10.Dependency Injection uses concept of Inversion of Control. A Java class has a dependency on another class.There are three types of dependency injection.They are:-
+ constructor injection, method injection, and property injection.
+
+11.Bean is used to create and manage object using spring.The ComponentScan annotation is used to find beans and the corresponding injected with Autowired annotation.
+
+13.String buffer and StringBuilder both are mutable classes which can be used to do operation on string objects such as reverse of string, concating string.String Buffer 
+   is synchronized.String builder is not synchronized.String Buffer is thread-safe. So, multiple threads can’t access at the same time, it is slow.
+   String builder is not thread-safe hence faster than String Buffer.
+
+14.Beanfactory instantiate beans when getBean() method gets called.Application Context instantiate bean at the time container start.
+
+15.2.IOC:IoC Container is the core of Spring Framework. It creates the objects, configures their dependencies.
+     The Container uses Dependency Injection(DI) to manage the components.
+   3.POJO:POJO stands for Plain Old Java Object.They are used to create and increase the readability and reusability of our code.
+   4.Component:. It is used to denote a class as a Component. We can use @Component across the class to mark the beans as Spring's managed components.  
+   5.Component Scan:With Spring, we use the @ComponentScan annotation along with the @Configuration annotation to specify the packages that we want to be scanned.
+   6.Bean: any object in the Spring framework that we initialize through Spring container is called Spring Bean. Any Java class can be a Spring Bean if 
+           it's configured to be initialized via container by providing configuration metadata information.
